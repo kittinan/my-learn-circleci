@@ -1,6 +1,3 @@
-import sys
-sys.path.append('./src')
-
 import unittest
 from kittinan import util
 
@@ -23,6 +20,11 @@ class TestUtil(unittest.TestCase):
     def test_hahaha(self):
         result = util.hahaha_number()
         expected = 555
+        self.assertEqual(result, expected)
+
+    def test_kittinan(self):
+        result = util.kittinan_number()
+        expected = 124
         self.assertEqual(result, expected)
 
 if __name__ == '__main__':
